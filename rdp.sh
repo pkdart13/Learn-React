@@ -28,4 +28,5 @@ install
 echo "install comple enter crd"
 read CRD
 adduser user chrome-remote-desktop
-su - user -c '$CRD --pin=$PIN'
+CRDI="$CRD --pin=$PIN"
+su - user -c '$CRDI'
